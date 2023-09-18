@@ -6,7 +6,7 @@ from newSletter import kaisuo
 
 
 
-keyWords = ['开锁','换锁','钥匙丢了']
+keyWords = ['开锁','换锁']
 
 def get_url(msg):
   text= msg.text
