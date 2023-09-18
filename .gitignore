@@ -2,12 +2,15 @@
 /storage/*.db
 /storage/*.csv
 /.idea/
+
 /__pycache__/
+
 /sequoia.log
 *.pyc
 .DS_Store
 storage/Positions
 
-
+dist/
+build/
 
 logs/*
