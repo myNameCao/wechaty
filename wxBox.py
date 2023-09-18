@@ -11,7 +11,8 @@ class wxBox:
         self.wxBox= itchat 
 
      def run(self,block=True):
-        self.notifySelf('wxBox is running')         
+        user_info = itchat.search_friends()
+        self.notifySelf('Login successfully as %s' % user_info['NickName'])     
         @itchat.msg_register([TEXT, MAP, CARD, NOTE, SHARING])
         def text_reply(msg):
             if( (msg.User is  None) or (msg.User["UserName"]!=msg['FromUserName'])):return
